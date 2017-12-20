@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		PlayerPrefsManager.UnlockLevel (2);
+		print (PlayerPrefsManager.IsLevelUnlocked (1));
+		print (PlayerPrefsManager.IsLevelUnlocked (2));
 	}
 	
 	// Update is called once per frame
